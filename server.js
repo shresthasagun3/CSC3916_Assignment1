@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.raw({type: '*/*'})); 
 
 //POST endpoint at root - echoes back request body 
-app,post('/', (req, res) => {
+app.post('/', (req, res) => {
     const contentType = req.get('Content-Type') || 'text/plain'; 
     res.set('Content-Type', contentType); 
     const body = req.body && req.body.length > 0 ? req.body : ''; 
@@ -17,7 +17,7 @@ app,post('/', (req, res) => {
 //Only start server if run directly (not imported for testing)
 if (require.main === module) {
     app.listen (PORT, () => {
-        console.log ('Echo server listening on port ${PORT}'); 
+        console.log (`Echo server listening on port ${PORT}`); 
     }); 
 }
 
