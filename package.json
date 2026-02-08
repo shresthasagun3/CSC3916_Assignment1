@@ -2,7 +2,7 @@
   "name": "csci3916_hw1",
   "version": "1.0.0",
   "description": "Echo App",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "mocha --timeout 10000 --exit",
     "start": "node -r dotenv/config server.js"
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/shawnmccarthy/week3.git"
   },
-  "author": "Shawn McCarthy",
+  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shawnmccarthy/week3/issues"
